@@ -1,0 +1,60 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: black;
+  }
+#pageHeader {
+  grid-area: header;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Copperplate", fantasy;
+  font-size: 24px;
+  }
+#pageFooter {
+  grid-area: footer;
+  color: #ffffff;
+  text-align: center; 
+  font-size: 11px;
+  }
+#mainArticle { 
+  grid-area: article;
+  color: #ffffff;  
+  text-align: center;
+  }
+#mainNav { 
+  grid-area: nav; 
+  color: #ffffff;
+  text-align: center;
+  font-family: "Copperplate", fantasy;
+  font-size: 18px;
+  line-height: 4;
+  }
+#siteAds { 
+  grid-area: ads;
+  color: #ffffff;
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
