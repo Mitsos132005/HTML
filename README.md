@@ -1,2 +1,3 @@
 # HTML
-A repository with all my HTML programs and projects
+Here you'll find all my HTML programs and projects that I have done over the years
+
